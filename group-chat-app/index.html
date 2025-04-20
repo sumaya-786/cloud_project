@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Group Chat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+  <div class="container">
+    <h2>Group Chat Room</h2>
+    <div id="chat"></div>
+    <form id="messageForm">
+      <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off" required />
+      <button type="submit" id="sendButton">
+        <span class="material-symbols-outlined">send</span>
+      </button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
